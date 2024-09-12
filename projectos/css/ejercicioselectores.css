@@ -1,0 +1,67 @@
+*{
+    color: red;
+}
+
+p{
+    color: blue;
+}
+
+#title-1{
+    color:green;
+}
+
+.bg-yellow{
+    color:yellow;
+}
+
+[id]{
+ background-color: aquamarine;
+}
+
+[id="title-1"]{
+    border: 2px solid black ;
+}
+
+[href="https://www.yahoo.com"]{
+    color: black;
+}
+
+[class^="title"]{
+
+    background-color: blueviolet;
+}
+
+[href$=".com"]{
+    border: 2px solid orange;
+}
+
+[class|="title"]:hover{
+    color: goldenrod;
+}
+
+[href*="127"]:hover{
+ color: black;
+}
+
+[href^="http"]{
+    background-color: aqua;
+}
+
+a,p,h1{
+    font-size: 20px;
+}
+
+main > p {
+    background-color: red;
+}
+
+h1 + p{
+    background-color: black;
+}
+h1 ~ *{
+    font-size: 30px;
+}
+
+main > *{
+ padding-top: 300px;
+}
