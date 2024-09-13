@@ -1,0 +1,23 @@
+td{
+    border: solid 2px black;
+    text-align: center;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+table{
+    border: solid 2px black;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: antiquewhite;
+    
+}
+
+#pie{
+    text-align: center;
+    background-color: rgb(18, 193, 237);
+}   
+
+span{
+ background-color: rgb(18, 193, 237);
+}
