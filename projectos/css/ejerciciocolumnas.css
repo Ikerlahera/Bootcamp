@@ -1,0 +1,23 @@
+html{
+    background-color: burlywood;
+}
+
+p{
+    column-count: 3;
+    column-gap: 40px;
+    column-rule: solid red 2px;
+
+}
+
+h1{
+    color: red;
+}
+h1:hover{
+    color: green;
+}
+
+p::selection{
+    color: blueviolet;
+    background: yellowgreen;
+  
+}
