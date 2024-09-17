@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Circulos Superpuestos</title>
+    <style>
+        .circle {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            position: absolute;
+            mix-blend-mode: difference;
+        }
+        .red {
+            background-color:red;
+            top: 50px;
+            left: 100px;
+        }
+        .green {
+            background-color: #06fd06;
+            top: 50px;
+            left: 200px;
+        }
+        .blue {
+            background-color: blue;
+            top: 139px;
+            left: 156px;
+        }
+    </style>
+</head>
+<body>
+    <div class="circle red"></div>
+    <div class="circle green"></div>
+    <div class="circle blue"></div>
+</body>
+</html>

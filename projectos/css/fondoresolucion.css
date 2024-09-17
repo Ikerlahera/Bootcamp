@@ -1,0 +1,65 @@
+
+
+.header{
+ height: 100px;
+   
+  
+   display: flex;
+   
+}
+
+#naranja{
+    flex: 1;
+    background-color: orange;
+    margin: 10px;
+}
+
+.body{
+
+    background-color: green;
+    height: 100px;
+  
+    margin: 10px;
+    display: flex;
+
+}
+
+.body2{  
+    height: 100px;
+  
+    display: flex;
+}
+
+#azul{
+    flex: 1;
+    background-color: blue;
+    margin: 10px;
+    padding: 20px;
+    height: 40px;
+}
+
+.footer{
+    height: 100px;
+   
+    display: flex;
+
+}
+
+#grey{
+   flex: 1;
+   margin: 10px;
+   padding: 20px;
+   background-color: grey;
+   height: 40px;
+   
+
+}
+
+@media (max-width: 700px) {
+    .footer, .body2{
+        display: block;
+    }
+
+   
+
+}
