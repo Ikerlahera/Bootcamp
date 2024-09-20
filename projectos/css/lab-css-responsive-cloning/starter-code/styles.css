@@ -1,3 +1,10 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
 body {
   background: #f9f9f9;
 }
@@ -25,11 +32,12 @@ header {
 }
 
 article {
-  border: solid 1px grey;
-  align-content: space-evenly;
+  border-top: solid 1px grey;
+  border-bottom: solid 1px gray;
   display: grid;
   grid-template-columns: auto auto;
-  grid-row: auto;
+  justify-content: start;
+  align-items: center;
 }
 
 article > img {
@@ -45,11 +53,15 @@ article > img {
 }
 
 .apps1 {
-  border: solid 1px grey;
+  border-top: solid 1px grey;
+  border-bottom: solid 1px gray;
+  margin: 30px;
 }
 
 .apps2 {
-  border: solid 1px grey;
+  border-top: solid 1px grey;
+  border-bottom: solid 1px gray;
+  margin: 30px;
 }
 
 .votes::before {
@@ -65,6 +77,7 @@ article > img {
 .stats {
   display: flex;
   gap: 10px;
+  margin-bottom: 10px;
 }
 
 .votes {
@@ -75,4 +88,21 @@ article > img {
 .comment {
   border: solid 1px grey;
   align-content: flex-end;
+}
+
+nav {
+  display: flex;
+  gap: 10px;
+  margin: 30px;
+}
+
+@media (width <= 600px) {
+  .apps1 {
+    margin: 0px;
+    width: 100%;
+  }
+  .apps2 {
+    margin: 0px;
+    width: 100%;
+  }
 }/*# sourceMappingURL=styles.css.map */
