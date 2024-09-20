@@ -105,4 +105,7 @@ nav {
     margin: 0px;
     width: 100%;
   }
+  nav {
+    overflow: hidden;
+  }
 }/*# sourceMappingURL=styles.css.map */
