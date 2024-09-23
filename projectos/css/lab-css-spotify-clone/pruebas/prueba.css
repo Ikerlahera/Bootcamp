@@ -73,7 +73,7 @@ article{
 }
 
 .kayne-1 img{
-    width: 100px
+    width: 10vw;
 }
 
 .kayne-1{
@@ -82,10 +82,11 @@ article{
 
 .kayne-2{
     align-content: center;
+    padding-left: 10%;
 }
 
 .kayne-2 img{
-    width: 60%;
+    width: 25vw;
     margin: 10%;
 }
 
