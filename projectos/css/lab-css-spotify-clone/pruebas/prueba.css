@@ -68,6 +68,27 @@ article{
     width: 100px;
 }
 
+.kayne{
+    background-color:#00B172;
+}
+
+.kayne-1 img{
+    width: 100px
+}
+
+.kayne-2 img{
+    width: 300px;
+    
+}
+
+footer{
+    display: flex;
+    color: white;
+    padding-right: 1px;
+}
+
+
+
 /* Mobile */
 @media (width < 320px) {
 	header {
