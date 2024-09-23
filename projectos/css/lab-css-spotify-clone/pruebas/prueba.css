@@ -76,18 +76,29 @@ article{
     width: 100px
 }
 
+.kayne-1{
+    align-content: center;
+}
+
+.kayne-2{
+    align-content: center;
+}
+
 .kayne-2 img{
-    width: 300px;
-    
+    width: 60%;
+    margin: 10%;
 }
 
 footer{
     display: flex;
     color: white;
-    padding-right: 1px;
+    padding-left: 2%;
 }
 
-
+.column{
+    margin: 30px;
+    font-size: 2vw;
+}
 
 /* Mobile */
 @media (width < 320px) {
