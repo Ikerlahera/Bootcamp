@@ -1,4 +1,4 @@
-const movimientos = ["🥌","🧻","✂"];
+const movimientos = ["🥌", "🧻", "✂"];
 
 let puntuacioncom = 0;
 let puntuacionj1 = 0;
@@ -6,60 +6,52 @@ let puntuacionj1 = 0;
 const piedra = document.getElementById("piedra")!;
 const papel = document.getElementById("papel")!;
 const tijera = document.getElementById("tijera")!;
+piedra.addEventListener("click", () => juego("🥌"));
+papel.addEventListener("click", () => juego("🧻"));
+tijera.addEventListener("click", () => juego("✂"));
 
-function juego () {
-    
+function juego(opcionj1: string) {
     const p = document.getElementById("resultado")!;
-    let opcioncom = movimientos[Math.random()*2];
-    let opcionj1 = "";
-    piedra.addEventListener("click", () => {
-    let opcionj1 = "🥌";
-    alert(opcionj1);    
-    });
 
-    papel.addEventListener("click", () => {
-    opcionj1 = "🧻";    
-    });
-    
-    tijera.addEventListener("click", () => {
-    opcionj1 = "✂";    
-    });
+    let opcioncom = movimientos[Math.floor(Math.random() * 3)];
 
-    if(opcioncom == opcionj1){
+    if (opcioncom == opcionj1) {
         p.textContent = "Es un empate";
+
     }
-    else if( (opcionj1 === "🥌" && opcioncom === "✂") ||
-    (opcionj1 === "🧻" && opcioncom === "🥌") || 
-    (opcionj1 === "✂" && opcioncom === "🧻") ){
+    else if ((opcionj1 === "🥌" && opcioncom === "✂") ||
+        (opcionj1 === "🧻" && opcioncom === "🥌") ||
+        (opcionj1 === "✂" && opcioncom === "🧻")) {
         p.textContent = "Ganaste";
         puntuacionj1++;
+
     } else {
         p.textContent = "Perdiste";
         puntuacioncom++;
-    }
-    
 
+    }
+
+    crearjuego();
 }
 
-function crearjuego () {
+function crearjuego() {
+    const p = document.getElementById("resultado")!;
 
-    if( puntuacioncom || puntuacionj1 < 3){
-        juego();
-    }
-    else{
+    if (puntuacioncom >= 3 || puntuacionj1 >= 3) {
         const div = document.getElementById("juego")!;
         div.innerHTML = "";
-        const p = document.getElementById("resultado")!;
-        p.textContent = "Ordenador: "+puntuacioncom+" Jugador:"+puntuacionj1;
-        if(puntuacioncom>puntuacionj1){
-            const p2 = document.createElement("p");
-        p.textContent = "Ha ganado la maquina";
+        if (puntuacioncom > puntuacionj1) {
+            p.textContent = "Ha ganado la maquina " + puntuacioncom + " a " + puntuacionj1;
         } else {
-            const p2 = document.createElement("p");
-        p.textContent = "Ha ganado el jugador";
+            p.textContent = "Ha ganado el jugador " + puntuacionj1 + " a " + puntuacioncom;
         }
+
+    }
+    else {
+        alert("j1: " + puntuacionj1 + " Com:" + puntuacioncom);
     }
 
 }
 
-crearjuego();
+
+crearjuego(); 
