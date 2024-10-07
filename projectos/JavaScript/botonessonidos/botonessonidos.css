@@ -1,0 +1,45 @@
+html{
+    background-image: url('images/0.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.imagen{
+    position: relative;
+    display: inline-block;
+    margin: 10px;
+    
+}
+
+.imagen img {
+    display: block;
+}
+
+.textoimagen{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: yellow;
+    font-size: 80px;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.center{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@font-face {
+    font-family: myFirstFont;
+    src: url(XXII\ ARABIAN-ONENIGHTSTAND.ttf);
+ }
+ 
+ * {
+    font-family: myFirstFont;
+ }

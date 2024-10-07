@@ -1,0 +1,168 @@
+body{
+    margin: 0;
+    height: 100vh;
+}
+
+.contenedor {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    height: 100%;
+}
+
+#tamagochi{
+    position: absolute; 
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 200px; 
+    max-height: 200px;
+    width: 100px; 
+}
+
+#contenedortamagochi{
+    position: absolute; 
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 500px; 
+    max-height: 500px;
+    width: 200px; 
+    height: 400px;
+}
+
+#progresohappiness{
+    height: 30px;
+    background-color: #ddd;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    position: absolute; 
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, 200%);
+    max-width: 200px; 
+    max-height: 200px;
+    width: 120px; 
+        
+    }
+    
+#barrahappiness{
+        height: 100%;
+        width: 0;
+        background-color: #4caf50;
+        transition: width 0.5s;
+    }
+
+
+
+
+
+
+
+
+#eat{
+    background-color: aquamarine;
+    
+}
+
+#progresoeat{
+    
+width: 100%;
+    max-width: 500px;
+    height: 30px;
+    background-color: #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+#barraeat{
+    height: 100%;
+    width: 0;
+    background-color: red;
+    transition: width 0.5s;
+}
+
+#play{
+    background-color: rgb(245, 245, 142);
+}
+
+#progresoplay{
+    
+    width: 100%;
+        max-width: 500px;
+        height: 30px;
+        background-color: #ddd;
+        border-radius: 5px;
+        overflow: hidden;
+        margin-bottom: 20px;
+    }
+    
+    #barraplay{
+        height: 100%;
+        width: 0;
+        background-color: #4caf50;
+        transition: width 0.5s;
+    }
+
+#fight {
+    background-color: rgb(252, 131, 131);
+}
+
+#sleep {
+    background-color: rgb(0, 217, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end; 
+    padding: 10px;
+    position: relative;
+    
+}
+
+#progresosleep{
+    display: flex;
+    width: 100%;
+        max-width: 500px;
+        height: 30px;
+        background-color: #ddd;
+        border-radius: 5px;
+        overflow: hidden;
+        margin-bottom: 20px;
+    }
+    
+    #barrasleep{
+        height: 100%;
+        width: 0;
+        background-color: #4caf50;
+        transition: width 0.5s;
+    }
+
+#fight {
+    background-color:rgb(252, 131, 131);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start; 
+    padding: 10px;
+    position: relative;
+        
+    }
+    
+#progresofight{
+    display: flex;
+    width: 100%;
+    max-width: 500px;
+    height: 30px;
+    background-color: #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 20px;
+        }
+        
+#barrafight{
+    height: 100%;
+    width: 0;
+    background-color: #4caf50;
+    transition: width 0.5s;
+        }
