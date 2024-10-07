@@ -4,28 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="calculadora.css">
 </head>
 <body>
+    <div id="calculadora">
     <input type="text" id="imprimir" disabled></input>
-    <button onclick="operacion('7')">7</button>
-    <button onclick="operacion('8')">8</button>
-    <button onclick="operacion('9')">9</button>
-    <button onclick="borrar()">DEL</button>
-    <button onclick="operacion('4')">4</button>
-    <button onclick="operacion('5')">5</button>
-    <button onclick="operacion('6')">6</button>
-    <button onclick="operacion('+')">+</button>
-    <button onclick="operacion('1')">1</button>
-    <button onclick="operacion('2')">2</button>
-    <button onclick="operacion('3')">3</button>
-    <button onclick="operacion('-')">-</button>
-    <button onclick="operacion('.')">.</button>
-    <button onclick="operacion('0')">0</button>
-    <button onclick="operacion('/')">/</button>
-    <button onclick="operacion('*')">x</button>
-    <button onclick="reset()">RESET</button>
-    <button onclick="calcular()">=</button>
-    
+    <button class="white" onclick="operacion('7')">7</button>
+    <button class="white" onclick="operacion('8')">8</button>
+    <button class="white" onclick="operacion('9')">9</button>
+    <button class="blue" onclick="borrar()">DEL</button>
+    <button class="white" onclick="operacion('4')">4</button>
+    <button class="white" onclick="operacion('5')">5</button>
+    <button class="white" onclick="operacion('6')">6</button>
+    <button class="white" onclick="operacion('+')">+</button>
+    <button class="white" onclick="operacion('1')">1</button>
+    <button class="white" onclick="operacion('2')">2</button>
+    <button class="white" onclick="operacion('3')">3</button>
+    <button class="white" onclick="operacion('-')">-</button>
+    <button class="white" onclick="operacion('.')">.</button>
+    <button class="white" onclick="operacion('0')">0</button>
+    <button class="white" onclick="operacion('/')">/</button>
+    <button class="white" onclick="operacion('*')">x</button>
+    <button class="blue" onclick="reset()">RESET</button>
+    <button class="red" onclick="calcular()">=</button>
+    </div>
 
     <script src="js/calculadora.js"></script>
 </body>

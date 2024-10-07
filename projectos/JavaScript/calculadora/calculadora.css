@@ -1,0 +1,17 @@
+#calculadora {
+
+    background-color: hsl(222, 26%, 31%);
+}
+
+.red{
+    background-color: hsl(6, 63%, 50%);
+    
+}
+
+.white {
+    background-color: hsl(0, 0%, 100%);
+}
+
+.blue {
+    background-color:  hsl(225, 21%, 49%);
+}
