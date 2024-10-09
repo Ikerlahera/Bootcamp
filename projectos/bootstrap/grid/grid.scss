@@ -1,9 +1,29 @@
 @import "node_modules/bootstrap/scss/bootstrap";
 
 .full {
-    background-color: green;
+    background-color: rgb(23, 240, 23);
 }
 
 .half{
     background-color: aqua;
+}
+
+.third{
+    background-color: rgb(255, 126, 126);
+}
+
+.twothird{
+    background-color: yellow;
+}
+
+.forth{
+    background-color: orange;
+}
+
+.thirdforths{
+    background-color: rgb(166, 107, 225);
+}
+
+.ten{
+    background-color: rgb(186, 186, 186);
 }
