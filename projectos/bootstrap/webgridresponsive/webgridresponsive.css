@@ -11964,4 +11964,32 @@ textarea.form-control-lg {
   .d-print-none {
     display: none !important;
   }
+}
+.green {
+  background-color: rgb(15, 253, 15);
+  height: 100px;
+}
+
+.red {
+  background-color: red;
+  min-height: 100px;
+}
+
+.pink {
+  background-color: rgb(225, 5, 130);
+  height: 100px;
+}
+
+.orange {
+  background-color: orange;
+  height: 100px;
+}
+
+.blue {
+  background-color: blue;
+  height: 100px;
+}
+
+#caja {
+  border: solid white 2px;
 }/*# sourceMappingURL=webgridresponsive.css.map */
