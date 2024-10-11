@@ -11964,17 +11964,4 @@ textarea.form-control-lg {
   .d-print-none {
     display: none !important;
   }
-}
-#caja {
-  overflow: hidden;
-  -o-object-fit: cover;
-     object-fit: cover;
-  border: solid white 1px;
-}
-
-#caja img {
-  -o-object-fit: cover;
-     object-fit: cover;
-  height: 200px;
-  width: 100%;
-}/*# sourceMappingURL=webresponsive.css.map */
+}/*# sourceMappingURL=webgridresponsive.css.map */
