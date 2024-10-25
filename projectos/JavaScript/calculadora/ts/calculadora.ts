@@ -6,7 +6,8 @@ function operacion(boton: string): void {
 
 function calcular() {
     const imprimir = document.getElementById("imprimir") as HTMLInputElement;
-    imprimir.value = eval(imprimir.value);
+    const resultado = eval(imprimir.value);
+    imprimir.value = resultado % 1 === 0 ? resultado.toString() : resultado.toFixed(2);
 }
 
 function reset(){
@@ -16,5 +17,5 @@ function reset(){
 
 function borrar() {
     const imprimir = document.getElementById("imprimir") as HTMLInputElement;
-    imprimir.value = imprimir.value.slice(0,-1);
+    imprimir.value = imprimir.value.slice(0, -1);
 }

@@ -1,6 +1,32 @@
 #calculadora {
 
     background-color: hsl(222, 26%, 31%);
+    height: 185px;
+    width: 300px;
+}
+
+#calculadora-body{
+    display: grid; 
+    grid-template-columns: repeat(4, 1fr);
+    margin: 10px;
+    gap: 5px;
+    
+}
+
+#calculadora-head{
+    display: grid;
+    grid-template-columns: 1,1fr;
+    margin: 10px;
+    padding-top: 10px;
+    
+}
+
+#calculadora-foot{
+    display: grid; 
+    grid-template-columns: repeat(2, 1fr);
+    margin: 10px;
+    padding-bottom: 10px;
+    gap: 5px;
 }
 
 .red{
@@ -15,3 +41,4 @@
 .blue {
     background-color:  hsl(225, 21%, 49%);
 }
+

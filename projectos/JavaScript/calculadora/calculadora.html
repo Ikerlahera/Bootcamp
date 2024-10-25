@@ -8,7 +8,9 @@
 </head>
 <body>
     <div id="calculadora">
-    <input type="text" id="imprimir" disabled></input>
+    <div id="calculadora-head"><input type="text" id="imprimir" disabled></input></div>
+
+    <div id="calculadora-body">
     <button class="white" onclick="operacion('7')">7</button>
     <button class="white" onclick="operacion('8')">8</button>
     <button class="white" onclick="operacion('9')">9</button>
@@ -24,9 +26,11 @@
     <button class="white" onclick="operacion('.')">.</button>
     <button class="white" onclick="operacion('0')">0</button>
     <button class="white" onclick="operacion('/')">/</button>
-    <button class="white" onclick="operacion('*')">x</button>
+    <button class="white" onclick="operacion('*')">x</button></div>
+    <div id="calculadora-foot">
     <button class="blue" onclick="reset()">RESET</button>
     <button class="red" onclick="calcular()">=</button>
+    </div>
     </div>
 
     <script src="js/calculadora.js"></script>

@@ -5,7 +5,8 @@ function operacion(boton) {
 }
 function calcular() {
     const imprimir = document.getElementById("imprimir");
-    imprimir.value = eval(imprimir.value);
+    const resultado = eval(imprimir.value);
+    imprimir.value = resultado % 1 === 0 ? resultado.toString() : resultado.toFixed(2);
 }
 function reset() {
     const imprimir = document.getElementById("imprimir");
